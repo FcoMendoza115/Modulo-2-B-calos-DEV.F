@@ -1,0 +1,39 @@
+.contenedor {
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #4d4949;
+}
+
+/* Elementos block */
+.bloque {
+    background-color: #f02ef7;
+    border: 2px solid #7c167f;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+}
+
+/* Elementos inline */
+.en-linea {
+    background-color: #461fbb78;
+    border: 2px solid #461fbb;
+    width: 400px;
+    margin: 5px;
+    padding: 5px;
+}
+
+/* Elemntos inline-block */
+.en-linea-bloque {
+    background-color: #d3931db3;
+    border: 2px solid #d3941d;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Pseudo clase */
+.en-linea-bloque:hover {
+    background-color: #efa51a;
+    color: white;
+}
