@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing Demo</title>
+    <link rel="stylesheet" href="./css/Clase2-Propiedades-Basicas.css">
+
+
+</head>
+
+<body>
+    <h1>Demostración de Box Sizing</h1>
+    <div class="container">
+        <div>
+            <h2>Content Box</h2>
+            <div class="box content-box">
+                Este es un content-box
+                <div class="medidas">
+                    width: 200px<br/>
+                    padding: 20px<br/>
+                    border: 5px<br/>
+                    <span class="resalto">
+                        Ancho total: 250px
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <h2>Border Box</h2>
+            <div class="box border-box">
+                Este es un border-box
+                <div class="medidas">
+                    width: 200px<br/>
+                    padding: 20px<br/>
+                    border: 5px<br/>
+                    <span class="resalto">
+                        Ancho total: 200px
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Explicacion</h2>
+        <p>
+            <strong>Content-box:</strong> El ancho total es la suma de width + padding + border
+            (200px + 40px padding + 10px border = 250px)
+        </p>
+        <p>
+            <strong>Border-box:</strong> El ancho total es exactamente el width especificado
+            (200px incluye padding y border)
+        </p>
+    </div>
+
+    <a href="index.html">Volver a la Página Principal</a>
+</body>
+</html>
