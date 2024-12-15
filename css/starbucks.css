@@ -7,6 +7,63 @@ body {
     padding: 0;
 }
 
+header {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 42px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.menu-left {
+    display: flex;
+    gap: 32px;
+}
+.menu-right {
+    display: flex;
+    gap: 32px;
+}
+
+.btn-ingresar {
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+.btn-join {
+    background: black;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 50px;
+}
+
+
 .row {
     max-width: 1440px;
     margin: 0 auto;
@@ -39,3 +96,35 @@ body {
 .text p {
     font-size: 1.2rem;
 }
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Estilo del enlace btn-back */
+  .btn-back {
+    display: flex; /* Usamos flexbox para centrar y alinear */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Color del texto */
+    background-color: #036635; /* Fondo verde */
+    padding: 16px 16px; /* Espaciado interno */
+    margin: 0 auto; /* Centra el enlace horizontalmente */
+    max-width: 240px; /* Establece el máximo ancho */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efecto de transición */
+  }
+  
+  /* Efecto hover */
+  .btn-back:hover {
+    background-color: #51e258; /* Fondo más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Le da un pequeño aumento de tamaño al pasar el cursor */
+  }
+  
