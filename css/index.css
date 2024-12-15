@@ -35,9 +35,9 @@ body {
   nav ul li a {
     text-decoration: none; /* Elimina el subrayado */
     color: white; /* Color del texto */
-    font-size: 1.1rem; /* Tamaño de fuente */
+    font-size: 1rem; /* Tamaño de fuente */
     font-weight: bold; /* Texto en negrita */
-    padding: 10px 20px; /* Espaciado dentro de los enlaces */
+    padding: 10px 10px; /* Espaciado dentro de los enlaces */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
   }
@@ -52,5 +52,5 @@ body {
   p {
     font-size: 1.2rem;
     color: #555;
-    margin-top: 20px;
+    margin-top: 10px;
   }

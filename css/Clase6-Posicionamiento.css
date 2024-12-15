@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para nuestro contenedor "header" */
+header {
+    background-color: #1badc0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/* Dentro de header, estilos para el h1 */
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Cambiamos los estilos de la lista no ordenada */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0f83927e;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+main {
+    padding: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Primera seccion, position */
+.position-container {
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.position-absolute {
+    width: 100px;
+    height: 50px;
+    background-color: lightcoral;
+    padding: 10px;
+    position: absolute;
+    bottom: 15px;
+    right: 0px;
+}
+
+.position-fixed {
+    background-color: rgb(219, 128, 8);
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+/* Segunda Seccion, Z-Index */
+.zindex-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.zindex-box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.zindex-1 {
+    background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.zindex-2 {
+    background-color: green;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+}
+
+.zindex-3 {
+    background-color: blue;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+}
+
+/* Seccion Tres, En prectica */
+.hover-container {
+    position: relative;
+    width: 200px;
+    height: 180px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.hover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-container:hover .hover-image {
+    opacity: 0.6;
+}
+
+.hover-container:hover .hover-text {
+    opacity: 1;
+}
