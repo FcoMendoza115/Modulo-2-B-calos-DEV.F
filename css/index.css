@@ -1,0 +1,56 @@
+/* Estilo general para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Estilo para el título */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para el menú de navegación */
+  nav {
+    background-color: #333; /* Fondo oscuro para el menú */
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block; /* Hace que los enlaces estén en línea */
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Color del texto */
+    font-size: 1.1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px 20px; /* Espaciado dentro de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+  }
+  
+  /* Estilo para el efecto hover */
+  nav ul li a:hover {
+    background-color: #4CAF50; /* Fondo verde al pasar el ratón */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  }
+  
+  /* Estilo para el texto del párrafo */
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+  }

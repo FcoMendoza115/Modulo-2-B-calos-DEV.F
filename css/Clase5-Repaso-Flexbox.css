@@ -1,0 +1,82 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marvel", sans-serif;
+}
+
+/* Estilos del header */
+header {
+    background-color: #ED1D24;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal de tarjetas */
+.heroes-container {
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos de cada tarjeta */
+.hero-card {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden; /* Evita que el contenido se desborde fuera de los limites */
+}
+
+.hero-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /* Esta propiedad controla como una imagen debe redimensionarse para ajustarse a su contenedor */
+    object-position: center; /* Determina la posicion de la imagen */
+}
+
+.hero-info {
+    padding: 15px;
+}
+
+.hero-info h2 {
+    color: #ED1D24;
+}
+
+.hero-info .wolverine {
+    color: #ddaa01;
+}
+.hero-info .capitan {
+    color: #0b52ec;
+}
+
+.hero-info .hulk {
+    color: #06b90f;
+}
+.hero-info p {
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Estilo básico para el enlace */
+.btn-back {
+    display: inline-block; /* Para que parezca un botón */
+    text-decoration: none; /* Elimina el subrayado */
+    color: white; /* Color del texto */
+    background-color: #4CAF50; /* Fondo verde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efecto al pasar el cursor */
+  }
+  
+  /* Efecto hover */
+  .btn-back:hover {
+    background-color: #45a049; /* Fondo ligeramente más oscuro */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+  }
