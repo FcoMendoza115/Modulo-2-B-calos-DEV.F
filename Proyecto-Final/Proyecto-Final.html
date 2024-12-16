@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>D3SINGLAB</title>
+  <link rel="shortcut icon" href="./img/Icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./Proyecto-Final.css">
+</head>
+
+<body>
+
+
+  <!----------------------------------------------------------------------------->
+  <!--Barra Navegacion -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#"><img src="./img/logo blanco-Dorado.png" alt="Logo"></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Icono del menú -->
+    <ul class="nav-links">
+      <li><a href="./Proyecto-Final.html">Inicio</a></li>
+      <li><a href="./Catalogo.html">Catalogo</a></li>
+    <li><a href="#sobre-nosotros">Sobre Nosotros</a></li> <!-- También apunta a la misma sección -->
+    <li><a href="#contacto">Contacto</a></li> <!-- Ejemplo para una sección de contacto -->
+  </ul>
+  <div class="container-user">
+    <i class="fa fa-user"></i>
+    <i class="fa fa-basket-shopping"></i>
+  </div>
+</nav>
+
+
+
+<!----------------------------------------------------------------------------->
+  
+
+
+    <div class="carousel">
+      <button class="carousel-arrow left" onclick="moveSlide(-1)">&#10094;</button>
+      <div class="carousel-images">
+          <img src="./img/Portada1.png" alt="Imagen 1">
+          <img src="./img/Portada2.png" alt="Imagen 2">
+          <img src="./img/Portada3.png" alt="Imagen 3">
+      </div>
+      <button class="carousel-arrow right" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+  <script src="script.js"></script>
+    
+    <!----------------------------------------------------------------------------->
+
+<div class="features">
+  <div class="feature-item">
+    <i class="fa-solid fa-truck-fast"></i> <!-- Icono de envío -->
+    <h3>Envío Gratis</h3>
+    <p>Disfruta de envío gratuito en todas tus compras.</p>
+  </div>
+  <div class="feature-item">
+    <i class="fa-solid fa-cogs"></i> <!-- Icono de soporte -->
+    <h3>Soporte 24/7</h3>
+    <p>Atención al cliente disponible en todo momento.</p>
+  </div>
+  <div class="feature-item">
+    <i class="fa-solid fa-gift"></i> <!-- Icono de ofertas -->
+    <h3>Ofertas Especiales</h3>
+    <p>Encuentra las mejores promociones cada día.</p>
+  </div>
+  <div class="feature-item">
+    <i class="fa-solid fa-shield-alt"></i> <!-- Icono de seguridad -->
+    <h3>Compra Segura</h3>
+    <p>Tu seguridad es nuestra prioridad en cada compra.</p>
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<div class="about-us" id="sobre-nosotros">
+  <div class="about-us-content">
+    <h2><strong>Sobre Nosotros</strong></h2>
+    <p>Somos una tienda de impresión 3D comprometida con ofrecer productos innovadores y de alta calidad. Nuestra misión es brindarte soluciones personalizadas y a la vanguardia tecnológica.</p>
+    <p>Con años de experiencia en el sector, nos especializamos en ofrecer un servicio eficiente y accesible para todos nuestros clientes.</p>
+    <p>Tu satisfacción es nuestra prioridad, y trabajamos cada día para garantizar la mejor experiencia en cada compra.</p>
+  </div>
+</div>
+
+
+<!----------------------------------------------------------------------------->
+
+<!-- Sección de productos en venta -->
+ 
+<div class="productos">
+  <div class="producto">
+    <img src="./img/Producto1.png" alt="Producto 1">
+    <div class="producto-info">
+      <h3>Maceta Mario Bros</h3>
+      <p>Maceta 3D inspirada en el icónico Bloque de Suerte de Mario Bros. Ideal para suculentas o plantas pequeñas, añade un toque divertido y nostálgico a tu decoración. Perfecta para fans de Nintendo.</p>
+      <div class="precio">
+        <i class="fa-solid fa-dollar-sign"></i> 500
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+  
+  <div class="producto">
+    <img src="./img/prodcuto2.png" alt="Producto 2">
+    <div class="producto-info">
+      <h3>Maceta Mario Bros 2</h3>
+      <p>Maceta 3D con diseño del famoso Bloque de Suerte de Mario Bros. Un complemento único y colorido para tus plantas, ideal para dar un toque gamer a tu hogar u oficina.</p>
+      <div class="precio">
+        <i class="fa-solid fa-dollar-sign"></i> 350
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="./img/Producto3.png" alt="Producto 3">
+    <div class="producto-info">
+      <h3>Minecraft Slime</h3>
+      <p>Maceta 3D inspirada en el adorable Slime de Minecraft. Perfecta para suculentas o plantas pequeñas, añade un toque pixelado y divertido a tu espacio. Ideal para fans del mundo cúbico.</p>
+      <div class="precio">
+        <i class="fa-solid fa-dollar-sign"></i> 800
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="./img/Producto4.png" alt="Producto 4">
+    <div class="producto-info">
+      <h3>Psyduck</h3>
+      <p>Maceta 3D inspirada en el carismático Psyduck. Ideal para suculentas o plantas pequeñas, añade un toque divertido y nostálgico a tu decoración. Perfecta para fans de Pokémon.</p>
+      <div class="precio">
+        <i class="fa-solid fa-dollar-sign"></i> 1200
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Título "Ofertas" con ícono de descuento -->
+<div class="ofertas">
+  <h2><i class="fa-solid fa-percent"></i> Ofertas Especiales</h2>
+</div>
+
+<!-- Sección de productos en oferta -->
+<div class="productos">
+  <div class="producto">
+    <img src="./img/Oferta1.png" alt="Producto 1">
+    <div class="producto-info">
+      <h3>Casco Master Chief</h3>
+      <p>Maceta 3D con el diseño del legendario casco de Master Chief. Ideal para suculentas o plantas pequeñas, añade un toque de Halo a tu decoración. Perfecta para fans de la saga.</p>
+      <div class="precio">
+        <span class="precio-original"><i class="fa-solid fa-dollar-sign"></i></i> 500</span>
+        <span class="precio-descuento"><i class="fa-solid fa-dollar-sign"></i></i> 400</span>
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="./img/Oferta2.png" alt="Producto 2">
+    <div class="producto-info">
+      <h3>Casco Stormtrooper</h3>
+      <p>Maceta 3D con diseño del emblemático casco de Stormtrooper. Perfecta para suculentas o plantas pequeñas, aporta un toque galáctico a cualquier espacio. Ideal para fans de Star Wars.</p>
+      <div class="precio">
+        <span class="precio-original"><i class="fa-solid fa-dollar-sign"></i> 350</span>
+        <span class="precio-descuento"><i class="fa-solid fa-dollar-sign"></i>300</span>
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="./img/Oferta3.png" alt="Producto 3">
+    <div class="producto-info">
+      <h3>Maceta Geométrica</h3>
+      <p>Maceta 3D de diseño geométrico moderno, ideal para suculentas o plantas pequeñas. Perfecta para añadir un toque minimalista y elegante a cualquier espacio..</p>
+      <div class="precio">
+        <span class="precio-original"><i class="fa-solid fa-dollar-sign"></i> 800</span>
+        <span class="precio-descuento"><i class="fa-solid fa-dollar-sign"></i> 720</span>
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+
+  <div class="producto">
+    <img src="./img/Oferta4.png" alt="Producto 4">
+    <div class="producto-info">
+      <h3>Mandalorian Helmet Armor</h3>
+      <p>Maceta 3D inspirada en el icónico casco de Mandalorian. Ideal para plantas pequeñas o suculentas, combina estilo y funcionalidad, perfecta para fans de Star Wars y decoración geek..</p>
+      <div class="precio">
+        <span class="precio-original"><i class="fa-solid fa-dollar-sign"></i> 1200</span>
+        <span class="precio-descuento"><i class="fa-solid fa-dollar-sign"></i>1100</span>
+      </div>
+      <button class="agregar-carrito">
+        <i class="fa-solid fa-cart-plus"></i> Agregar al carrito
+      </button>
+    </div>
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------->
+
+
+<!-- Sección de contacto -->
+<div class="contacto" id="contacto">
+  <div class="contacto-info">
+    <i class="fa-solid fa-headset"></i> <!-- Ícono de headset -->
+    <h3>Contacto</h3>
+    <p>Para más información o asistencia, por favor contáctanos a través del siguiente número:</p>
+    <p><strong>Teléfono: </strong>+123 456 7890</p>
+  </div>
+</div>
+
+
+
+<!-- Pie de Página -->
+<footer class="pie-pagina">
+  <div class="footer-contenido">
+    <!-- Sección de suscripción -->
+    <div class="suscripcion">
+      <h3>Suscríbete</h3>
+      <p>Recibe noticias y promociones en tu correo:</p>
+      <form action="#" method="POST" class="form-suscripcion">
+        <input type="email" placeholder="Ingresa tu correo" required>
+        <button type="submit">Suscribirse</button>
+      </form>
+    </div>
+
+    <!-- Sección de redes sociales -->
+    <div class="redes-sociales">
+      <h3>¡Síguenos!</h3>
+      <a href="https://www.facebook.com/people/D3SingLab/100094116487929/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/fcomendoza115/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+  <script src="https://kit.fontawesome.com/ac3874c041.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/ac3874c041.js" crossorigin="anonymous"></script>
+  <script src="./script.js"></script> 
+  </body>
+  </html>

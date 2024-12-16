@@ -1,0 +1,230 @@
+/* -------------------------------------------------------------------------*/
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #1f0ad8, #db0adb);
+    padding: 10px 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logo */
+  .logo a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+  }
+  
+  .logo img {
+    height: 75px;
+    transition: height 0.3s ease;
+  }
+  
+  /* Enlaces de navegación */
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Botón de menú (para pantallas pequeñas) */
+  .menu-toggle {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+    margin-left: auto;
+  }
+  
+  /* Contenedor de usuario y carrito */
+  .container-user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .container-user .fa-user,
+  .container-user .fa-basket-shopping {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .container-user .fa-user:hover,
+  .container-user .fa-basket-shopping:hover {
+    color: #ffdd57;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: center;
+    }
+  
+    .logo {
+      text-align: center;
+      flex-grow: 0;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: linear-gradient(90deg, #1f0ad8, #db0adb);
+      padding: 10px 0;
+      margin-top: 10px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links a {
+      text-align: center;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+   /* ---------------------------------------------------------------------*/
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  /* Contenedor del carrusel */
+  .carousel-container {
+    position: relative;
+    width: 90%; /* Ocupa el 90% del ancho de la ventana */
+    max-width: 600px; /* Límite en pantallas grandes */
+    margin: 50px auto;
+    aspect-ratio: 4/5; /* Mantiene proporción (600x750) */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .carousel-image {
+    flex-shrink: 0;
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: 100%; /* Mantiene la altura basada en el contenedor */
+    object-fit: cover; /* Escala la imagen para llenar el espacio */
+  }
+  
+  /* Flechas de navegación */
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Vista previa */
+  .preview-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 15px auto;
+    width: 90%; /* Adapta el ancho */
+    max-width: 600px;
+    overflow: hidden;
+  }
+  
+  .preview-image {
+    width: 22%; /* Ocupa un cuarto del contenedor */
+    height: auto; /* Ajusta la altura proporcionalmente */
+    object-fit: cover;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .preview-image:hover {
+    transform: scale(1.1);
+    border-color: #333;
+  }
+  
+  .preview-image.active {
+    border-color: #007bff;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .carousel-container {
+      width: 95%;
+    }
+  
+    .preview-image {
+      width: 24%; /* Ajusta el tamaño en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    button {
+      font-size: 1.5rem;
+    }
+  
+    .preview-image {
+      width: 26%; /* Aumenta ligeramente el tamaño en móviles pequeños */
+    }
+  }
+  

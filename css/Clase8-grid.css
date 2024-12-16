@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.ejemplo {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Ejemplo 1: Grid básico */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-container div {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ejemplo 2: Grid con líneas */
+.grid-areas {
+    display: grid;
+    /* Define 3 columnas:
+       - Primera columna: 200px fijo
+       - Segunda columna: 1 fracción del espacio restante
+       - Tercera columna: 1 fracción del espacio restante */
+    grid-template-columns: 200px 1fr 1fr;
+
+    /* Define 3 filas:
+       - Primera fila: altura automática según el contenido
+       - Segunda fila: 1 fracción del espacio restante
+       - Tercera fila: altura automática según el contenido */
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    /* Establece una altura mínima del contenedor de 400px */
+    min-height: 400px;
+}
+
+.grid-areas div {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    /* De la primera a la última línea */
+}
+
+.sidebar {
+    grid-row: 2 / 3;
+    /* Solo en la fila del medio */
+    grid-column: 1 / 2;
+    /* Primera columna */
+}
+
+.contenido {
+    grid-row: 2 / 3;
+    /* Solo en la fila del medio */
+    grid-column: 2 / -1;
+    /* Desde la segunda columna hasta el final */
+}
+
+.footer {
+    grid-column: 1 / -1;
+    /* De la primera a la última línea */
+}
+
+/* Ejemplo 3: Grid responsive */
+.grid-responsive {
+    display: grid;
+    /* Crea columnas automáticas:
+               - auto-fill: llena el espacio disponible con tantas columnas como sea posible
+               - minmax(200px, 1fr): cada columna tendrá mínimo 200px y máximo 1 fracción del espacio disponible */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.grid-responsive div {
+    background-color: #2ecc71;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Ejemplo 4: Grid estilo Pinterest */
+.grid-pinterest {
+    display: grid;
+    /* Crea columnas automáticas:
+               - auto-fill: llena el espacio disponible con tantas columnas como sea posible
+               - minmax(250px, 1fr): cada columna tendrá mínimo 250px y máximo 1 fracción del espacio disponible */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
+}
+
+.grid-pinterest .pin {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-pinterest img {
+    width: 100%;
+    display: block;
+    /* Asegura comportamiento consistente, se comporta mejor con display: block */
+    object-fit: cover;
+}
+
+.pin-content {
+    padding: 15px;
+}
+
+.pin-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+
+.pin-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de CSS Grid</title>
+    <link rel="stylesheet" href="./css/Clase8-grid.css">
+</head>
+<body>
+    <h1>Guía de CSS Básico</h1>
+
+    <section class="ejemplo">
+        <h2>1. Grid Container</h2>
+        <p>Un grid simple de 3 columnas usando <code>grid-template-columns</code>:</p>
+        <div class="grid-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+    </section>
+
+    <section class="ejemplo">
+        <h2>2. Grid con Líneas</h2>
+        <p>Usando <code>grid-column</code> y <code>grid-row</code> para crear un layout:</p>
+        <div class="grid-areas">
+            <div class="header">Encabezado</div>
+            <div class="sidebar">Barra lateral</div>
+            <div class="contenido">Contenido principal</div>
+            <div class="footer">Pie de página</div>
+        </div>
+    </section>
+
+    <section class="ejemplo">
+        <h2>3. Grid Responsive</h2>
+        <p>Grid que se adapta automáticamente usando <code>auto-fit</code> y <code>minmax</code>:</p>
+        <div class="grid-responsive">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+        </div>
+    </section>
+
+    <section class="ejemplo">
+        <h2>4. Grid Estilo Pinterest</h2>
+        <p>Grid de imágenes con diseño tipo Pinterest usando <code>auto-fill</code> y <code>minmax</code>:</p>
+        <div class="grid-pinterest">
+            <div class="pin">
+                <img src="https://picsum.photos/400/300" alt="Imagen 1">
+                <div class="pin-content">
+                    <h3>Título de la imagen 1</h3>
+                    <p>Descripción breve de la imagen</p>
+                </div>
+            </div>
+            <div class="pin">
+                <img src="https://picsum.photos/400/500" alt="Imagen 2">
+                <div class="pin-content">
+                    <h3>Título de la imagen 2</h3>
+                    <p>Descripción breve de la imagen</p>
+                </div>
+            </div>
+            <div class="pin">
+                <img src="https://picsum.photos/400/400" alt="Imagen 3">
+                <div class="pin-content">
+                    <h3>Título de la imagen 3</h3>
+                    <p>Descripción breve de la imagen</p>
+                </div>
+            </div>
+            <div class="pin">
+                <img src="https://picsum.photos/400/600" alt="Imagen 4">
+                <div class="pin-content">
+                    <h3>Título de la imagen 4</h3>
+                    <p>Descripción breve de la imagen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
